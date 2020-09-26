@@ -1,11 +1,14 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Carousel from "../components/Carousel"
 
 export default function Home({ data }) {
-  console.log("data =======>", data)
+  const [isRendered, setIsRendered] = useState(false)
+  useEffect(() => {
+    setIsRendered(true)
+  }, [])
   return (
     <div>
-      <Carousel images={data.carousel.nodes[0].image} />
+      {isRendered ? <Carousel images={data.carousel.nodes[0].image} /> : null}
 
       <ul className="mt-16 max-w-2xl m-auto text-lg px-4">
         <li className="flex justify-between">
