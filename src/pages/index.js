@@ -13,7 +13,7 @@ export default function Home({ data }) {
       <ul className="mt-16 max-w-2xl m-auto text-lg px-4">
         <li className="flex justify-between">
           <div>Telefone</div>
-          <div>91919191</div>
+          <div>916232354</div>
         </li>
         <li className="flex justify-between">
           <div>Facebook</div>
