@@ -36,6 +36,7 @@ module.exports = {
         display: "swap",
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
   siteMetadata: {
     title: `Alexandra Rodrigues Photography`,
