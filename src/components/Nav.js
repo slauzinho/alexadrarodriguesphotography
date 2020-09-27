@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import Logo from "../../static/alexis-logo.png"
+import MiniLogo from "../../static/mini-logo.png"
 
 export default function Nav() {
   const [menuVisibility, setMenuVisibility] = useState(false)
@@ -68,9 +69,9 @@ export default function Nav() {
                     <div class="flex items-center justify-between">
                       <div>
                         <img
-                          class="h-8 w-auto"
-                          src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg"
-                          alt="Workflow"
+                          className="h-8 w-auto"
+                          src={MiniLogo}
+                          alt="small logo"
                         />
                       </div>
                       <div class="-mr-2">

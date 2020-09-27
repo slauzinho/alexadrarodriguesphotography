@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import PostList from "../components/PostList"
 
 const SmashTheCake = ({ data }) => {
