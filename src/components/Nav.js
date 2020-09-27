@@ -15,7 +15,11 @@ export default function Nav() {
         </li>
         <div className="hidden md:flex">
           <li className="mr-8">
-            <Link to="/" className="title md:font-title md:text-3xl">
+            <Link
+              to="/"
+              className="title md:font-title md:text-3xl"
+              role="menuitem"
+            >
               Home
             </Link>
           </li>
@@ -23,28 +27,44 @@ export default function Nav() {
             <Link
               to="/newborn-and-babies"
               className="title md:font-title md:text-3xl"
+              role="menuitem"
             >
               Newborn & Babies
             </Link>
           </li>
           <li className="mr-8">
-            <Link to="/lifestyle" className="title md:font-title md:text-3xl">
+            <Link
+              to="/lifestyle"
+              className="title md:font-title md:text-3xl"
+              role="menuitem"
+            >
               Lifestyle
             </Link>
           </li>
           <li className="mr-8">
-            <Link to="/smash-the-cake" className="md:font-title md:text-3xl">
+            <Link
+              to="/smash-the-cake"
+              className="md:font-title md:text-3xl"
+              role="menuitem"
+            >
               Smash The Cake
             </Link>
           </li>
           <li>
-            <Link to="/newly-mom" className="md:font-title md:text-3xl">
+            <Link
+              to="/newly-mom"
+              className="md:font-title md:text-3xl"
+              role="menuitem"
+            >
               Newly Mom
             </Link>
           </li>
         </div>
         <div className="block md:hidden">
-          <button onClick={() => setMenuVisibility(true)}>
+          <button
+            aria-label="open menu"
+            onClick={() => setMenuVisibility(true)}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -76,6 +96,7 @@ export default function Nav() {
                       </div>
                       <div class="-mr-2">
                         <button
+                          aria-label="close menu"
                           onClick={() => setMenuVisibility(false)}
                           type="button"
                           class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"

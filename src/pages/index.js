@@ -19,7 +19,7 @@ export default function Home({ data }) {
 
         <ul className="mt-16 m-auto text-lg px-4 flex items-center flex-col md:font-title md:text-3xl">
           <li className="flex justify-between items-center">
-            <img src={FacebookLogo} className="w-6 mr-4" />
+            <img src={FacebookLogo} className="w-6 mr-4" alt="facebook logo" />
             <a
               href="https://www.facebook.com/alexandrarodriguesphotography"
               target="_blank"
@@ -29,7 +29,11 @@ export default function Home({ data }) {
             </a>
           </li>
           <li className="flex justify-between mt-2">
-            <img src={InstagramLogo} className="w-6 mr-4" />
+            <img
+              src={InstagramLogo}
+              className="w-6 mr-4"
+              alt="instagram logo"
+            />
             <a
               href="https://www.instagram.com/alexandrarodriguesphotography"
               target="_blank"
@@ -39,7 +43,7 @@ export default function Home({ data }) {
             </a>
           </li>
           <li className="flex justify-between m-2">
-            <img src={Telephone} className="w-6 mr-4" />
+            <img src={Telephone} className="w-6 mr-4" alt="phone number" />
             <div>916232304</div>
           </li>
         </ul>
