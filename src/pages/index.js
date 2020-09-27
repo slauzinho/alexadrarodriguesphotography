@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react"
 import { graphql } from "gatsby"
 import Carousel from "../components/Carousel"
 import SEO from "../components/SEO"
+import FacebookLogo from "../../static/facebook.svg"
+import InstagramLogo from "../../static/instagram.svg"
+import Telephone from "../../static/telephone.svg"
 
 export default function Home({ data }) {
   const [isRendered, setIsRendered] = useState(false)
@@ -14,13 +17,9 @@ export default function Home({ data }) {
       <div>
         {isRendered ? <Carousel images={data.carousel.nodes[0].image} /> : null}
 
-        <ul className="mt-16 max-w-2xl m-auto text-lg px-4">
-          <li className="flex justify-between">
-            <div>Telefone</div>
-            <div>916232304</div>
-          </li>
-          <li className="flex justify-between">
-            <div>Facebook</div>
+        <ul className="mt-16 m-auto text-lg px-4 flex items-center flex-col md:font-title md:text-3xl">
+          <li className="flex justify-between items-center">
+            <img src={FacebookLogo} className="w-6 mr-4" />
             <a
               href="https://www.facebook.com/alexandrarodriguesphotography"
               target="_blank"
@@ -29,8 +28,8 @@ export default function Home({ data }) {
               facebook/alexandrarodriguesphotography
             </a>
           </li>
-          <li className="flex justify-between">
-            <div>Instagram</div>
+          <li className="flex justify-between mt-2">
+            <img src={InstagramLogo} className="w-6 mr-4" />
             <a
               href="https://www.instagram.com/alexandrarodriguesphotography"
               target="_blank"
@@ -38,6 +37,10 @@ export default function Home({ data }) {
             >
               instagram/alexandrarodriguesphotography
             </a>
+          </li>
+          <li className="flex justify-between m-2">
+            <img src={Telephone} className="w-6 mr-4" />
+            <div>916232304</div>
           </li>
         </ul>
       </div>
