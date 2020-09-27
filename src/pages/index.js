@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import { graphql } from "gatsby"
 import Carousel from "../components/Carousel"
 
 export default function Home({ data }) {
