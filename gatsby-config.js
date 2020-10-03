@@ -36,6 +36,16 @@ module.exports = {
         display: "swap",
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-179570787-1",
+        head: false,
+        exclude: [],
+        pageTransitionDelay: 0,
+        defer: false,
+      },
+    },
     `gatsby-plugin-react-helmet`,
   ],
   siteMetadata: {
