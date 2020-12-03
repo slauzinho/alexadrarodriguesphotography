@@ -52,6 +52,7 @@ module.exports = {
   siteMetadata: {
     title: `Alexandra Rodrigues Photography`,
     siteUrl: "https://alexandrarodriguesphotography.pt",
-    description: "Portfolio website da Alexandra Rodrigues",
+    description:
+      "Portfolio website da Alexandra Rodrigues, sessões de fotos variadas, newborn, recem-nascido, smash the cake, casamentos, batizados, gravidas, natal.",
   },
 }
