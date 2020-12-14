@@ -19,8 +19,6 @@ export default function Home({ data }) {
       <div>
         {isRendered ? <Carousel images={data.carousel.nodes[0].image} /> : null}
 
-        <Reviews reviews={data.reviews.nodes} />
-
         <ul className="mt-16 m-auto text-lg px-4 flex items-center flex-col md:font-title md:text-3xl">
           <li className="flex justify-between items-center">
             <img src={FacebookLogo} className="w-6 mr-4" alt="facebook logo" />
@@ -51,6 +49,7 @@ export default function Home({ data }) {
             <div>916232304</div>
           </li>
         </ul>
+        <Reviews reviews={data.reviews.nodes} />
       </div>
     </>
   )
