@@ -53,7 +53,7 @@ export default function Home({ data }) {
 }
 
 export const query = graphql`
-  query GetCarouselImagesQuery {
+  query getReviewsQueryAndGetCarouselImagesQuery {
     carousel: allSanityCarousel {
       nodes {
         image {
@@ -64,6 +64,12 @@ export const query = graphql`
             }
           }
         }
+      }
+    }
+    review: allSanityReviews {
+      nodes {
+        name
+        review
       }
     }
   }
