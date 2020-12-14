@@ -5,17 +5,21 @@ import SEO from "../components/SEO"
 import FacebookLogo from "../../static/facebook.svg"
 import InstagramLogo from "../../static/instagram.svg"
 import Telephone from "../../static/telephone.svg"
+import Reviews from "../components/Reviews"
 
 export default function Home({ data }) {
   const [isRendered, setIsRendered] = useState(false)
   useEffect(() => {
     setIsRendered(true)
   }, [])
+
   return (
     <>
       <SEO />
       <div>
         {isRendered ? <Carousel images={data.carousel.nodes[0].image} /> : null}
+
+        <Reviews reviews={data.reviews.nodes} />
 
         <ul className="mt-16 m-auto text-lg px-4 flex items-center flex-col md:font-title md:text-3xl">
           <li className="flex justify-between items-center">
@@ -66,7 +70,7 @@ export const query = graphql`
         }
       }
     }
-    review: allSanityReviews {
+    reviews: allSanityReviews {
       nodes {
         name
         review
