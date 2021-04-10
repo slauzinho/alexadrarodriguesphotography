@@ -34,6 +34,15 @@ export default function Nav() {
           </li>
           <li className="mr-8">
             <Link
+              to="/batizados"
+              className="title md:font-title md:text-3xl"
+              role="menuitem"
+            >
+              Batizados
+            </Link>
+          </li>
+          <li className="mr-8">
+            <Link
               to="/lifestyle"
               className="title md:font-title md:text-3xl"
               role="menuitem"
