@@ -6,6 +6,19 @@ dotenv.config({ path: ".env" })
 module.exports = {
   plugins: [
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-179570787-1",
+        head: false,
+        respectDNT: true,
+        pageTransitionDelay: 0,
+        defer: false,
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "alexandrarodriguesphotography.pt",
+      },
+    },
+    {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
