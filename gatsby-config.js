@@ -9,13 +9,10 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-179570787-1",
-        head: false,
+        head: true,
         respectDNT: true,
         pageTransitionDelay: 0,
         defer: false,
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "alexandrarodriguesphotography.pt",
       },
     },
     {
