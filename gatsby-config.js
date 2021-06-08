@@ -5,6 +5,19 @@ dotenv.config({ path: ".env" })
 
 module.exports = {
   plugins: [
+    /* {
+      resolve: `gatsby-plugin-facebook-analytics`,
+      options: {
+        appId: `YOUR_APP_ID`,
+        version: `v11.0`,
+        xfbml: true,
+        cookie: false,
+        includeInDevelopment: false,
+        debug: false,
+        autoLogAppEvents: true,
+        language: `en_US`,
+      },
+    }, */
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

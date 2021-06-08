@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import Logo from "../../static/alexis-logo.png"
 import MiniLogo from "../../static/mini-logo.png"
+import CustomerChat from "./CustomerChat"
 
 export default function Nav() {
   const [menuVisibility, setMenuVisibility] = useState(false)
@@ -87,7 +88,7 @@ export default function Nav() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="h-6 w-6"
+              className="w-6 h-6"
             >
               <path
                 fillRule="evenodd"
@@ -107,7 +108,7 @@ export default function Nav() {
                     <div class="flex items-center justify-between">
                       <div>
                         <img
-                          className="h-8 w-auto"
+                          className="w-auto h-8"
                           src={MiniLogo}
                           alt="small logo"
                         />
@@ -200,6 +201,7 @@ export default function Nav() {
           ) : null}
         </div>
       </ul>
+      <CustomerChat />
     </nav>
   )
 }
