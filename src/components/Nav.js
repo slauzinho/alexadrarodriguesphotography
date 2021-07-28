@@ -26,15 +26,6 @@ export default function Nav() {
           </li>
           <li className="mr-8">
             <Link
-              to="/newborn-and-babies"
-              className="title md:font-title md:text-3xl"
-              role="menuitem"
-            >
-              Newborn & Babies
-            </Link>
-          </li>
-          <li className="mr-8">
-            <Link
               to="/batizados"
               className="title md:font-title md:text-3xl"
               role="menuitem"
@@ -53,6 +44,24 @@ export default function Nav() {
           </li>
           <li className="mr-8">
             <Link
+              to="/newborn-and-babies"
+              className="title md:font-title md:text-3xl"
+              role="menuitem"
+            >
+              Newborn & Babies
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/newly-mom"
+              className="md:font-title md:text-3xl"
+              role="menuitem"
+            >
+              Newly Mom
+            </Link>
+          </li>
+          <li className="mr-8">
+            <Link
               to="/smash-the-cake"
               className="md:font-title md:text-3xl"
               role="menuitem"
@@ -67,15 +76,6 @@ export default function Nav() {
               role="menuitem"
             >
               Weddings
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/newly-mom"
-              className="md:font-title md:text-3xl"
-              role="menuitem"
-            >
-              Newly Mom
             </Link>
           </li>
         </div>
