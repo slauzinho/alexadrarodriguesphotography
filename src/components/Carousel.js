@@ -14,8 +14,8 @@ const Carousel = ({ images }) => {
   return (
     <div>
       <Slider {...settings}>
-        {images.map(img => (
-          <div key={img.id}>
+        {images.map((img, index) => (
+          <div key={`${img.id}-${index}`}>
             <Image
               fluid={img.asset.fluid}
               style={{ height: "60vh", objectFit: "cover" }}

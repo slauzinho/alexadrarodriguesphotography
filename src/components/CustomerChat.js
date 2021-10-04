@@ -6,7 +6,7 @@ const CustomerChat = () => {
     chatbox.setAttribute("page_id", "111604183529367")
     chatbox.setAttribute("attribution", "biz_inbox")
     window.fbAsyncInit = function () {
-      FB.init({
+      window.FB.init({
         xfbml: true,
         version: "v11.0",
       })
@@ -24,7 +24,7 @@ const CustomerChat = () => {
   return (
     <>
       <div id="fb-root"></div>
-      <div id="fb-customer-chat" class="fb-customerchat"></div>
+      <div id="fb-customer-chat" className="fb-customerchat"></div>
     </>
   )
 }
